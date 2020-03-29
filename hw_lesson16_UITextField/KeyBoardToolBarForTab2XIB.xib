@@ -9,32 +9,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="er8-4q-kSc" customClass="KeyBoardToolBarForTab1" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eBN-tV-XfQ" customClass="KeyBoardToolBarForTab2" customModule="hw_lesson16_UITextField" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
             <items>
-                <barButtonItem title="Item" image="icons8-slide-up-100" id="N9z-Wz-BWb">
+                <barButtonItem title="Item" image="icons8-slide-up-100" id="d1z-hz-t1c">
                     <connections>
-                        <action selector="prevButtonClicked" destination="er8-4q-kSc" id="eCV-QS-Vdv"/>
+                        <action selector="prevButtonClicked" destination="eBN-tV-XfQ" id="oET-Ii-UJJ"/>
                     </connections>
                 </barButtonItem>
-                <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="1W5-cz-kLK"/>
-                <barButtonItem title="Item" image="icons8-down-button-100" id="A51-js-qkW">
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="diC-kK-f7U"/>
+                <barButtonItem title="Item" image="icons8-next-page-100" id="GwD-Kp-z65">
                     <connections>
-                        <action selector="nextButtonClicked" destination="er8-4q-kSc" id="hFZ-Vh-gmT"/>
+                        <action selector="doneButtonClicked" destination="eBN-tV-XfQ" id="qPI-2Z-ZUJ"/>
                     </connections>
                 </barButtonItem>
-                <barButtonItem style="plain" systemItem="flexibleSpace" id="q0X-fd-dN4"/>
-                <barButtonItem title="Item" image="icons8-next-page-100" id="3bt-mU-I6H">
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="mgH-BL-RNb"/>
+                <barButtonItem title="Item" image="icons8-down-button-100" id="2RK-Zx-zrG">
                     <connections>
-                        <action selector="doneButtonClicked" destination="er8-4q-kSc" id="k8D-tR-M1D"/>
+                        <action selector="nextButtonClicked" destination="eBN-tV-XfQ" id="MhD-iF-Jgn"/>
                     </connections>
                 </barButtonItem>
             </items>
             <connections>
-                <outlet property="doneButton" destination="3bt-mU-I6H" id="Von-Ev-qb5"/>
-                <outlet property="nextButton" destination="A51-js-qkW" id="rN3-Cf-Abt"/>
-                <outlet property="prevButton" destination="N9z-Wz-BWb" id="z0r-QY-4qx"/>
+                <outlet property="doneButton" destination="GwD-Kp-z65" id="5VJ-EH-pcE"/>
+                <outlet property="nextButton" destination="2RK-Zx-zrG" id="u7d-nA-y0N"/>
+                <outlet property="prevButton" destination="d1z-hz-t1c" id="H3L-ox-D1p"/>
             </connections>
             <point key="canvasLocation" x="139" y="145"/>
         </toolbar>

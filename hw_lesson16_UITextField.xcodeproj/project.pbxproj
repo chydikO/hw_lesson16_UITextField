@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AF14CF852430922D002FC1E0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14CF842430922D002FC1E0 /* CustomTextField.swift */; };
-		AF604BA0242E0F3900A87AE1 /* KeyBoardToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF604B9F242E0F3900A87AE1 /* KeyBoardToolBar.swift */; };
+		AF14CF872430D559002FC1E0 /* KeyBoardToolBarForTab2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14CF862430D559002FC1E0 /* KeyBoardToolBarForTab2.swift */; };
+		AF14CF892430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF14CF882430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib */; };
+		AF604BA0242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF604B9F242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift */; };
 		AF604BA2242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF604BA1242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib */; };
 		AF8D64FC2427879E0062AA45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D64FB2427879E0062AA45 /* AppDelegate.swift */; };
 		AF8D65002427879E0062AA45 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D64FF2427879E0062AA45 /* Tab1ViewController.swift */; };
@@ -22,7 +24,9 @@
 
 /* Begin PBXFileReference section */
 		AF14CF842430922D002FC1E0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		AF604B9F242E0F3900A87AE1 /* KeyBoardToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardToolBar.swift; sourceTree = "<group>"; };
+		AF14CF862430D559002FC1E0 /* KeyBoardToolBarForTab2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardToolBarForTab2.swift; sourceTree = "<group>"; };
+		AF14CF882430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyBoardToolBarForTab2XIB.xib; sourceTree = "<group>"; };
+		AF604B9F242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardToolBarForTab1.swift; sourceTree = "<group>"; };
 		AF604BA1242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyBoardToolBarXIB.xib; sourceTree = "<group>"; };
 		AF8D64F82427879E0062AA45 /* hw_lesson16_UITextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw_lesson16_UITextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8D64FB2427879E0062AA45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,13 +75,15 @@
 				AF8D650F24278B510062AA45 /* Tab2ViewController.swift */,
 				AF8D651124278B630062AA45 /* Tab3ViewController.swift */,
 				AF8D651324278B710062AA45 /* Tab4ViewController.swift */,
-				AF604B9F242E0F3900A87AE1 /* KeyBoardToolBar.swift */,
+				AF604B9F242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift */,
 				AF604BA1242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib */,
 				AF8D65042427879E0062AA45 /* Assets.xcassets */,
 				AF8D65012427879E0062AA45 /* Main.storyboard */,
 				AF8D65062427879E0062AA45 /* LaunchScreen.storyboard */,
 				AF8D65092427879F0062AA45 /* Info.plist */,
 				AF14CF842430922D002FC1E0 /* CustomTextField.swift */,
+				AF14CF862430D559002FC1E0 /* KeyBoardToolBarForTab2.swift */,
+				AF14CF882430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib */,
 			);
 			path = hw_lesson16_UITextField;
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 			files = (
 				AF8D65082427879E0062AA45 /* LaunchScreen.storyboard in Resources */,
 				AF8D65052427879E0062AA45 /* Assets.xcassets in Resources */,
+				AF14CF892430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib in Resources */,
 				AF604BA2242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib in Resources */,
 				AF8D65032427879E0062AA45 /* Main.storyboard in Resources */,
 			);
@@ -157,8 +164,9 @@
 				AF8D651224278B630062AA45 /* Tab3ViewController.swift in Sources */,
 				AF8D65002427879E0062AA45 /* Tab1ViewController.swift in Sources */,
 				AF8D651424278B710062AA45 /* Tab4ViewController.swift in Sources */,
+				AF14CF872430D559002FC1E0 /* KeyBoardToolBarForTab2.swift in Sources */,
 				AF14CF852430922D002FC1E0 /* CustomTextField.swift in Sources */,
-				AF604BA0242E0F3900A87AE1 /* KeyBoardToolBar.swift in Sources */,
+				AF604BA0242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift in Sources */,
 				AF8D64FC2427879E0062AA45 /* AppDelegate.swift in Sources */,
 				AF8D651024278B510062AA45 /* Tab2ViewController.swift in Sources */,
 			);

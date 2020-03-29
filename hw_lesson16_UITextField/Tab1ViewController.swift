@@ -26,7 +26,7 @@ class Tab1ViewController: UIViewController {
     @IBOutlet weak var passwordField: CustomTextField!
     @IBOutlet weak var passwordTextLabel: CustomTextField!
     
-    private let keyboardToolbar = KeyBoardToolBar.create()
+    private let keyboardToolbar = KeyBoardToolBarForTab1.create()
     
     override func viewDidLoad() {
         super.viewDidLoad()

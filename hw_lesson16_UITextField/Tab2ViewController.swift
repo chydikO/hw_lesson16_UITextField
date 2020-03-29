@@ -7,24 +7,27 @@
 //
 
 import UIKit
+/*
+ Создать экран с 6-ю или 8-ю полями ввода (UITextField). Реализовать следующее:
+ 1. Toolbar в кнопками prev (переход на предыдущее поле ввода), done(завершить редактирование), next (переход на следующее поле ввода).
+ 2. Кнопки prev и next нужно дизейблить, если нет предыдущих\следующих полей.
+ 3. Порядок обхода (см. на картинке)
+ 4. Механизм перехода от поля к полю по нажатию на кнопку return (next-
+ >next->next->done)
+ 5. Поддержка всех экранов (iphone, ipad, портер, альбом). При этом размеры
+ полей ввода всегда должны быть одинаковы
+ */
 
 class Tab2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction private func hideKeyboard() {
+        view.endEditing(true)
     }
-    */
-
 }

@@ -8,13 +8,13 @@
 
 import UIKit
 
-class KeyBoardToolBar: UIToolbar {
+class KeyBoardToolBarForTab1: UIToolbar {
     
     //массив всех UITextField которые присутствуют на экране во время вводв
     private var inputViews: [UITextField] = []
     
-    static func create() -> KeyBoardToolBar? {
-        return Bundle.main.loadNibNamed("KeyBoardToolBarXIB", owner: nil, options: nil)?.first as? KeyBoardToolBar ?? KeyBoardToolBar()
+    static func create() -> KeyBoardToolBarForTab1? {
+        return Bundle.main.loadNibNamed("KeyBoardToolBarXIB", owner: nil, options: nil)?.first as? KeyBoardToolBarForTab1 ?? KeyBoardToolBarForTab1()
     }
     
     //TODO: сделать метод init, если мы будем игититься без XIB
