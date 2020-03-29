@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KQZ-Ol-xuL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab1 View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Tab1ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-Ud-h3I">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="только текст" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lRE-aP-HlO" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="JvN-1J-ADU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" returnKeyType="next" textContentType="username"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="pVb-tX-Bep"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="только цифры" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-eU-jQ8" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="80" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="VNK-by-BLf"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="введите ваш email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ex3-mG-KaN" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="140" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="lGc-rg-Bga"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZH7-fy-PuJ" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="188" width="374" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="75a-YY-f1b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="введите ваш пароль" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lFq-3w-CHg" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="226" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="NC2-Jk-Rsg"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="lFq-3w-CHg" firstAttribute="trailing" secondItem="lRE-aP-HlO" secondAttribute="trailing" id="0EQ-6B-zKS"/>
+                                    <constraint firstItem="ZH7-fy-PuJ" firstAttribute="top" secondItem="Ex3-mG-KaN" secondAttribute="bottom" constant="8" id="0cx-iB-Tzh"/>
+                                    <constraint firstAttribute="trailing" secondItem="lRE-aP-HlO" secondAttribute="trailing" constant="20" id="222-6h-gEH"/>
+                                    <constraint firstItem="Ex3-mG-KaN" firstAttribute="centerX" secondItem="ixK-Ud-h3I" secondAttribute="centerX" id="4BG-8q-tw3"/>
+                                    <constraint firstItem="ZH7-fy-PuJ" firstAttribute="leading" secondItem="Ex3-mG-KaN" secondAttribute="leading" id="4is-ZL-rRS"/>
+                                    <constraint firstItem="lFq-3w-CHg" firstAttribute="top" secondItem="ZH7-fy-PuJ" secondAttribute="bottom" constant="8" id="FvX-Me-G0f"/>
+                                    <constraint firstItem="ZH7-fy-PuJ" firstAttribute="trailing" secondItem="Ex3-mG-KaN" secondAttribute="trailing" id="HqT-jW-Vw4"/>
+                                    <constraint firstItem="lRE-aP-HlO" firstAttribute="centerX" secondItem="ixK-Ud-h3I" secondAttribute="centerX" id="Ij5-Bg-uUI"/>
+                                    <constraint firstItem="Ex3-mG-KaN" firstAttribute="trailing" secondItem="lRE-aP-HlO" secondAttribute="trailing" id="RZo-OV-6sd"/>
+                                    <constraint firstItem="rX3-eU-jQ8" firstAttribute="centerX" secondItem="ixK-Ud-h3I" secondAttribute="centerX" id="Sao-fI-Fqv"/>
+                                    <constraint firstItem="rX3-eU-jQ8" firstAttribute="height" secondItem="lRE-aP-HlO" secondAttribute="height" id="Vrl-OJ-PpH"/>
+                                    <constraint firstItem="lFq-3w-CHg" firstAttribute="leading" secondItem="lRE-aP-HlO" secondAttribute="leading" id="W2g-eR-9xg"/>
+                                    <constraint firstItem="lFq-3w-CHg" firstAttribute="centerX" secondItem="ixK-Ud-h3I" secondAttribute="centerX" id="X0W-EI-adX"/>
+                                    <constraint firstItem="rX3-eU-jQ8" firstAttribute="leading" secondItem="lRE-aP-HlO" secondAttribute="leading" id="YP1-Nf-zGO"/>
+                                    <constraint firstItem="rX3-eU-jQ8" firstAttribute="top" secondItem="lRE-aP-HlO" secondAttribute="bottom" constant="20" id="ZhV-X3-f1q"/>
+                                    <constraint firstItem="rX3-eU-jQ8" firstAttribute="trailing" secondItem="lRE-aP-HlO" secondAttribute="trailing" id="bZC-pK-pNr"/>
+                                    <constraint firstAttribute="bottom" secondItem="lFq-3w-CHg" secondAttribute="bottom" constant="20" id="boq-HJ-bcX"/>
+                                    <constraint firstItem="Ex3-mG-KaN" firstAttribute="leading" secondItem="lRE-aP-HlO" secondAttribute="leading" id="jlE-91-eIV"/>
+                                    <constraint firstItem="lRE-aP-HlO" firstAttribute="leading" secondItem="ixK-Ud-h3I" secondAttribute="leading" constant="20" id="nq9-jb-Bqb"/>
+                                    <constraint firstItem="lRE-aP-HlO" firstAttribute="top" secondItem="ixK-Ud-h3I" secondAttribute="top" constant="20" id="rpW-8b-PtH"/>
+                                    <constraint firstItem="lFq-3w-CHg" firstAttribute="height" secondItem="lRE-aP-HlO" secondAttribute="height" id="sjr-mD-IXa"/>
+                                    <constraint firstItem="Ex3-mG-KaN" firstAttribute="height" secondItem="lRE-aP-HlO" secondAttribute="height" id="u8d-ir-Tph"/>
+                                    <constraint firstItem="Ex3-mG-KaN" firstAttribute="top" secondItem="rX3-eU-jQ8" secondAttribute="bottom" constant="20" id="vi1-my-TLa"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DxK-P6-rrG" appends="YES" id="Aww-qa-AhR"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ixK-Ud-h3I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3DY-eF-MuX"/>
+                            <constraint firstItem="ixK-Ud-h3I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7fX-i4-w8D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ixK-Ud-h3I" secondAttribute="trailing" id="Meh-Q1-Ay6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ixK-Ud-h3I" secondAttribute="bottom" id="elf-Lj-jCY"/>
+                            <constraint firstItem="ixK-Ud-h3I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hOY-7K-Iot"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-30-100" id="KAv-j6-QyG"/>
+                    <connections>
+                        <outlet property="emailField" destination="Ex3-mG-KaN" id="1wq-6q-Kcd"/>
+                        <outlet property="numberField" destination="rX3-eU-jQ8" id="zgS-EZ-9CE"/>
+                        <outlet property="passwordField" destination="lFq-3w-CHg" id="Gay-1f-2oj"/>
+                        <outlet property="passwordTextLabel" destination="ZH7-fy-PuJ" id="cSR-Rr-FNw"/>
+                        <outlet property="textField" destination="lRE-aP-HlO" id="9kG-Mo-LHu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DxK-P6-rrG">
+                    <connections>
+                        <action selector="hideKeyboard" destination="BYZ-38-t0r" id="lGy-Rk-y2u"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1076.8115942028987" y="136.60714285714286"/>
+        </scene>
+        <!--Tab4 View Controller-->
+        <scene sceneID="YQu-Y5-BXs">
+            <objects>
+                <viewController id="ZtQ-BP-X1s" customClass="Tab4ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kjt-Bd-N5d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gzs-iK-KSz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-34-100" id="g7B-FG-f06"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M99-th-fbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="-628"/>
+        </scene>
+        <!--Tab2 View Controller-->
+        <scene sceneID="SRq-Bg-YPY">
+            <objects>
+                <viewController id="4QA-3H-4KC" customClass="Tab2ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WDr-0H-PqA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="edX-vJ-0ik"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-31-100" id="1gy-4q-QgB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1i-aZ-GgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="929"/>
+        </scene>
+        <!--Tab3 View Controller-->
+        <scene sceneID="bfz-nw-L0D">
+            <objects>
+                <viewController id="k9O-DB-c6E" customClass="Tab3ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3CH-Cu-oDw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3W9-U4-oAq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-32-100" id="vCk-sq-pQW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3w-RJ-cXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="929"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PpE-uo-HGp">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KQZ-Ol-xuL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="g2R-ZK-s8a"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IBT-WL-bKn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Mpo-52-xR2"/>
+                        <segue destination="4QA-3H-4KC" kind="relationship" relationship="viewControllers" id="G2G-hm-uAa"/>
+                        <segue destination="k9O-DB-c6E" kind="relationship" relationship="viewControllers" id="mFA-dK-N6L"/>
+                        <segue destination="ZtQ-BP-X1s" kind="relationship" relationship="viewControllers" id="swQ-bQ-qKX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cd9-gp-Dcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-30-100" width="50" height="50"/>
+        <image name="icons8-31-100" width="50" height="50"/>
+        <image name="icons8-32-100" width="50" height="50"/>
+        <image name="icons8-34-100" width="50" height="50"/>
+    </resources>
+</document>
