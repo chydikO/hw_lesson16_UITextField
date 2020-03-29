@@ -20,14 +20,62 @@ import UIKit
 
 class Tab2ViewController: UIViewController {
 
+    @IBOutlet weak var textField1: CustomTextField!
+    @IBOutlet weak var textField2: CustomTextField!
+    @IBOutlet weak var textField3: CustomTextField!
+    @IBOutlet weak var textField4: CustomTextField!
+    @IBOutlet weak var textField5: CustomTextField!
+    @IBOutlet weak var textField6: CustomTextField!
+    @IBOutlet weak var textField7: CustomTextField!
+    @IBOutlet weak var textField8: CustomTextField!
+    
+    private let keyboardToolbar = KeyBoardToolBarForTab2.create()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        keyboardToolbar?.setup(textInputViews: [textField1,
+                                                textField3,
+                                                textField5,
+                                                textField7,
+                                                textField2,
+                                                textField4,
+                                                textField6,
+                                                textField8])
+        
+        keyboardToolbar?.onDoneButtonClicked = { [weak self] in
+            self?.view.endEditing(true)
+        }
     }
     
 
     
     @IBAction private func hideKeyboard() {
         view.endEditing(true)
+    }
+}
+
+extension Tab2ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == textField1 {
+            textField3?.becomeFirstResponder()
+        } else if textField == textField2 {
+            textField4?.becomeFirstResponder()
+        } else if textField == textField3 {
+            textField5?.becomeFirstResponder()
+        } else if textField == textField4 {
+            textField6?.becomeFirstResponder()
+        } else if textField == textField5 {
+            textField7?.becomeFirstResponder()
+        } else if textField == textField6 {
+            textField8?.becomeFirstResponder()
+        } else if textField == textField7 {
+            textField2?.becomeFirstResponder()
+        }else {
+            view.endEditing(true)
+        }
+        
+        return true
     }
 }

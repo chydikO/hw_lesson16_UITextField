@@ -13,9 +13,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
             <items>
-                <barButtonItem title="Item" image="icons8-slide-up-100" id="d1z-hz-t1c">
+                <barButtonItem id="d1z-hz-t1c">
                     <connections>
-                        <action selector="prevButtonClicked" destination="eBN-tV-XfQ" id="oET-Ii-UJJ"/>
+                        <action selector="prevButtonClicked" destination="eBN-tV-XfQ" id="uCY-b9-Y0B"/>
                     </connections>
                 </barButtonItem>
                 <barButtonItem style="plain" systemItem="flexibleSpace" id="diC-kK-f7U"/>
@@ -27,14 +27,14 @@
                 <barButtonItem style="plain" systemItem="flexibleSpace" id="mgH-BL-RNb"/>
                 <barButtonItem title="Item" image="icons8-down-button-100" id="2RK-Zx-zrG">
                     <connections>
-                        <action selector="nextButtonClicked" destination="eBN-tV-XfQ" id="MhD-iF-Jgn"/>
+                        <action selector="nextButtonClicked" destination="eBN-tV-XfQ" id="U4R-26-pS0"/>
                     </connections>
                 </barButtonItem>
             </items>
             <connections>
                 <outlet property="doneButton" destination="GwD-Kp-z65" id="5VJ-EH-pcE"/>
-                <outlet property="nextButton" destination="2RK-Zx-zrG" id="u7d-nA-y0N"/>
-                <outlet property="prevButton" destination="d1z-hz-t1c" id="H3L-ox-D1p"/>
+                <outlet property="nextButton" destination="2RK-Zx-zrG" id="qh1-rM-gRT"/>
+                <outlet property="prevButton" destination="d1z-hz-t1c" id="gjg-rk-Gy2"/>
             </connections>
             <point key="canvasLocation" x="139" y="145"/>
         </toolbar>
@@ -42,6 +42,5 @@
     <resources>
         <image name="icons8-down-button-100" width="50" height="50"/>
         <image name="icons8-next-page-100" width="50" height="50"/>
-        <image name="icons8-slide-up-100" width="50" height="50"/>
     </resources>
 </document>
