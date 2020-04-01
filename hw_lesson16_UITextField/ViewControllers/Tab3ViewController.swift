@@ -85,29 +85,27 @@ class Tab3ViewController: UIViewController {
     
     @IBAction private func doneButtonClicked() {
         //проверка всех полейй ввода - валидация
-        let rightViewTrue = UIImageView(image: UIImage(named: "icons-true"))
-        let rightViewFalse = UIImageView(image: UIImage(named: "icons-false"))
+        let rightViewTrue = UIImage(named: "icons-true") ?? UIImage()
+        let rightViewFalse = UIImage(named: "icons-false") ?? UIImage()
         
         if isFullNameValid {
-            fullNameTF.rightView = rightViewTrue
+            fullNameTF.setIcon(rightViewTrue)
         } else {
-            fullNameTF.rightView = rightViewFalse
+            fullNameTF.setIcon(rightViewFalse)
         }
         
         if isTelephoneValid {
-            telTF.rightView = rightViewTrue
+            telTF.setIcon(rightViewTrue)
         } else {
-            telTF.rightView = rightViewFalse
+            telTF.setIcon(rightViewFalse)
         }
         
         if isEmailValid {
-            emailTF.rightView = rightViewTrue
+            emailTF.setIcon(rightViewTrue)
         } else {
-            emailTF.rightView = rightViewFalse
+            emailTF.setIcon(rightViewFalse)
         }
-        collectionsTextField.forEach{ item in
-            item.rightViewMode = .always
-        }
+        
     }
     
     @IBAction private func hideKeyboard() {
@@ -156,7 +154,7 @@ extension Tab3ViewController: UITextFieldDelegate {
             }
         }
         
-        if isFullNameValid && isEmailValid && isTelephoneValid {
+        if isFullNameValid || isEmailValid || isTelephoneValid {
             doneButton.isEnabled = true
         } else {
             doneButton.isEnabled = false
@@ -179,38 +177,6 @@ extension Tab3ViewController: UITextFieldDelegate {
     }
 }
 
-/*
-extension String {
-    func isFullNameValid() -> Bool {
-        let regEx = "^([A-Z][a-z]{2,}\\s[A-Z][a-z]{1,}\\s?([A-Z][a-z]{1,})?)"
-
-        let fullNameTest = NSPredicate(format:"SELF MATCHES %@", regEx)
-        return fullNameTest.evaluate(with: self)
-    }
-
-    func isEmailValid() -> Bool {
-        let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", regEx)
-        return emailTest.evaluate(with: self)
-    }
-    
-    func isTelNumberValid() -> Bool {
-        let regEx = "^\\+?3?8?(0\\d{9})$"
-
-        let telNumberTest = NSPredicate(format:"SELF MATCHES %@", regEx)
-        return telNumberTest.evaluate(with: self)
-    }
-
-    func isPasswordValid() -> Bool {
-        let regEx = "(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}"
-
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", regEx)
-        return passwordTest.evaluate(with: self)
-    }
-}
-*/
-
 extension NSRegularExpression {
     convenience init(_ pattern: String) {
         do {
@@ -225,3 +191,4 @@ extension NSRegularExpression {
         return firstMatch(in: string, options: [], range: range) != nil
     }
 }
+
