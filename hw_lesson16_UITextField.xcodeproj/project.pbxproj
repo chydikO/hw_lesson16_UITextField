@@ -20,6 +20,8 @@
 		AF8D651024278B510062AA45 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D650F24278B510062AA45 /* Tab2ViewController.swift */; };
 		AF8D651224278B630062AA45 /* Tab3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D651124278B630062AA45 /* Tab3ViewController.swift */; };
 		AF8D651424278B710062AA45 /* Tab4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D651324278B710062AA45 /* Tab4ViewController.swift */; };
+		AF9368C12434DB2000E34A6E /* KeyBoardToolBarForTab4XIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9368C02434DB2000E34A6E /* KeyBoardToolBarForTab4XIB.xib */; };
+		AF9368C32434DB3B00E34A6E /* KeyBoardToolBarForTab4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9368C22434DB3B00E34A6E /* KeyBoardToolBarForTab4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		AF8D650F24278B510062AA45 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 		AF8D651124278B630062AA45 /* Tab3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3ViewController.swift; sourceTree = "<group>"; };
 		AF8D651324278B710062AA45 /* Tab4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4ViewController.swift; sourceTree = "<group>"; };
+		AF9368C02434DB2000E34A6E /* KeyBoardToolBarForTab4XIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyBoardToolBarForTab4XIB.xib; sourceTree = "<group>"; };
+		AF9368C22434DB3B00E34A6E /* KeyBoardToolBarForTab4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardToolBarForTab4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			children = (
 				AF604B9F242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift */,
 				AF14CF862430D559002FC1E0 /* KeyBoardToolBarForTab2.swift */,
+				AF9368C22434DB3B00E34A6E /* KeyBoardToolBarForTab4.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 			children = (
 				AF604BA1242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib */,
 				AF14CF882430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib */,
+				AF9368C02434DB2000E34A6E /* KeyBoardToolBarForTab4XIB.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8D65082427879E0062AA45 /* LaunchScreen.storyboard in Resources */,
+				AF9368C12434DB2000E34A6E /* KeyBoardToolBarForTab4XIB.xib in Resources */,
 				AF8D65052427879E0062AA45 /* Assets.xcassets in Resources */,
 				AF14CF892430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib in Resources */,
 				AF604BA2242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib in Resources */,
@@ -208,6 +215,7 @@
 				AF14CF852430922D002FC1E0 /* CustomTextField.swift in Sources */,
 				AF604BA0242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift in Sources */,
 				AF8D64FC2427879E0062AA45 /* AppDelegate.swift in Sources */,
+				AF9368C32434DB3B00E34A6E /* KeyBoardToolBarForTab4.swift in Sources */,
 				AF8D651024278B510062AA45 /* Tab2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

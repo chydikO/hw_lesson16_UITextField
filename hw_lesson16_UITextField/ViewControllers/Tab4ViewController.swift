@@ -10,21 +10,17 @@ import UIKit
 
 class Tab4ViewController: UIViewController {
 
+    @IBOutlet weak var cvvTextField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let cvvKeyboard = KeyBoardToolBarForTab4.create()
+               cvvTextField?.inputView = cvvKeyboard
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction private func hideKeyboard() {
+        view.endEditing(true)
     }
-    */
-
 }

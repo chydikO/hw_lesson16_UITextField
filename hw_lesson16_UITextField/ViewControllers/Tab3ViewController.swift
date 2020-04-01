@@ -18,10 +18,6 @@
 import UIKit
 
 class Tab3ViewController: UIViewController {
-
-    @IBOutlet weak var fullNameTL: UILabel!
-    @IBOutlet weak var telTL: UILabel!
-    @IBOutlet weak var emailTL: UILabel!
     
     @IBOutlet weak var fullNameTF: CustomTextField!
     @IBOutlet weak var telTF: CustomTextField!
@@ -74,12 +70,12 @@ class Tab3ViewController: UIViewController {
     }
 
     @IBAction private func clearButtonClicked() {
+        doneButton.isEnabled = false
         collectionsTextField.forEach { label in
             label.text = ""
             fullNameTF.rightView = nil
             emailTF.rightView = nil
             telTF.rightView = nil
-
         }
     }
     
@@ -118,20 +114,12 @@ extension Tab3ViewController: UITextFieldDelegate {
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         
-        guard let fullName = textField.text, !fullName.isEmpty else {
-            return true
-        }
-        
-        guard let telephone = textField.text, !telephone.isEmpty else {
-            return true
-        }
-        
-        guard let email = textField.text, !email.isEmpty else {
+        guard let textFieldText = textField.text, !textFieldText.isEmpty else {
             return true
         }
         
         if textField == fullNameTF {
-            if NAME_REGEX.matches(fullName) {
+            if NAME_REGEX.matches(textFieldText) {
                 isFullNameValid = true
             } else {
                 isFullNameValid = false
@@ -139,7 +127,7 @@ extension Tab3ViewController: UITextFieldDelegate {
         }
         
         if textField == telTF {
-            if TELEPHONE_REGEX.matches(telephone) {
+            if TELEPHONE_REGEX.matches(textFieldText) {
                 isTelephoneValid = true
             } else {
                 isTelephoneValid = false
@@ -147,7 +135,7 @@ extension Tab3ViewController: UITextFieldDelegate {
         }
         
         if textField == emailTF {
-            if EMAIL_REGEX.matches(email) {
+            if EMAIL_REGEX.matches(textFieldText) {
                 isEmailValid = true
             } else {
                 isEmailValid = false
