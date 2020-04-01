@@ -25,7 +25,7 @@
                     </connections>
                 </barButtonItem>
                 <barButtonItem style="plain" systemItem="flexibleSpace" id="mgH-BL-RNb"/>
-                <barButtonItem title="Item" image="icons8-down-button-100" id="2RK-Zx-zrG">
+                <barButtonItem id="2RK-Zx-zrG">
                     <connections>
                         <action selector="nextButtonClicked" destination="eBN-tV-XfQ" id="U4R-26-pS0"/>
                     </connections>
@@ -40,7 +40,6 @@
         </toolbar>
     </objects>
     <resources>
-        <image name="icons8-down-button-100" width="50" height="50"/>
         <image name="icons8-next-page-100" width="50" height="50"/>
     </resources>
 </document>

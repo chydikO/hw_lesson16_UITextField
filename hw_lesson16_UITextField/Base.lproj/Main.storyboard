@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KQZ-Ol-xuL">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,14 +11,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="Tab1ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-Ud-h3I">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="только текст" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lRE-aP-HlO" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="20" width="374" height="40"/>
+                                        <rect key="frame" x="20" y="20" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="JvN-1J-ADU"/>
                                         </constraints>
@@ -31,7 +29,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="только цифры" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-eU-jQ8" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="80" width="374" height="40"/>
+                                        <rect key="frame" x="20" y="80" width="560" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                         <connections>
@@ -39,7 +37,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="введите ваш email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ex3-mG-KaN" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="140" width="374" height="40"/>
+                                        <rect key="frame" x="20" y="140" width="560" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                                         <connections>
@@ -47,7 +45,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZH7-fy-PuJ" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="188" width="374" height="30"/>
+                                        <rect key="frame" x="20" y="188" width="560" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="75a-YY-f1b"/>
                                         </constraints>
@@ -55,7 +53,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="введите ваш пароль" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lFq-3w-CHg" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="226" width="374" height="40"/>
+                                        <rect key="frame" x="20" y="226" width="560" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
                                         <connections>
@@ -127,7 +125,7 @@
             <objects>
                 <viewController id="ZtQ-BP-X1s" customClass="Tab4ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kjt-Bd-N5d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gzs-iK-KSz"/>
@@ -143,20 +141,20 @@
             <objects>
                 <viewController id="4QA-3H-4KC" customClass="Tab2ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WDr-0H-PqA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Fq-wv-VrT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uzC-A0-zuq">
-                                        <rect key="frame" x="20" y="20" width="374" height="196"/>
+                                        <rect key="frame" x="20" y="20" width="560" height="196"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5XS-2v-gmk">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="34"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JdX-fC-RnS" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                         <connections>
@@ -164,7 +162,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3NF-NT-IHF" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                                        <rect key="frame" x="197" y="0.0" width="177" height="34"/>
+                                                        <rect key="frame" x="290" y="0.0" width="270" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                         <connections>
@@ -174,10 +172,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6iX-Td-Frw">
-                                                <rect key="frame" x="0.0" y="54" width="374" height="34"/>
+                                                <rect key="frame" x="0.0" y="54" width="560" height="34"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5C-kW-xJi" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                                         <connections>
@@ -185,7 +183,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dzF-EG-aEv" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                                        <rect key="frame" x="197" y="0.0" width="177" height="34"/>
+                                                        <rect key="frame" x="290" y="0.0" width="270" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                                         <connections>
@@ -195,10 +193,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cZE-GZ-2Cw">
-                                                <rect key="frame" x="0.0" y="108" width="374" height="34"/>
+                                                <rect key="frame" x="0.0" y="108" width="560" height="34"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-8Q-V6O" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                         <connections>
@@ -206,7 +204,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U23-af-O5c" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                                        <rect key="frame" x="197" y="0.0" width="177" height="34"/>
+                                                        <rect key="frame" x="290" y="0.0" width="270" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                         <connections>
@@ -216,10 +214,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uaf-oN-dsI">
-                                                <rect key="frame" x="0.0" y="162" width="374" height="34"/>
+                                                <rect key="frame" x="0.0" y="162" width="560" height="34"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZy-Wa-L57" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                         <connections>
@@ -227,7 +225,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8q-nI-f0l" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
-                                                        <rect key="frame" x="197" y="0.0" width="177" height="34"/>
+                                                        <rect key="frame" x="290" y="0.0" width="270" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                                         <connections>
@@ -283,22 +281,6 @@
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="928.79464285714278"/>
         </scene>
-        <!--Tab3 View Controller-->
-        <scene sceneID="bfz-nw-L0D">
-            <objects>
-                <viewController id="k9O-DB-c6E" customClass="Tab3ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3CH-Cu-oDw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="3W9-U4-oAq"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="icons8-32-100" id="vCk-sq-pQW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d3w-RJ-cXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1078" y="929"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PpE-uo-HGp">
             <objects>
@@ -313,15 +295,169 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Mpo-52-xR2"/>
                         <segue destination="4QA-3H-4KC" kind="relationship" relationship="viewControllers" id="G2G-hm-uAa"/>
-                        <segue destination="k9O-DB-c6E" kind="relationship" relationship="viewControllers" id="mFA-dK-N6L"/>
-                        <segue destination="ZtQ-BP-X1s" kind="relationship" relationship="viewControllers" id="swQ-bQ-qKX"/>
+                        <segue destination="pB5-Jb-xO5" kind="relationship" relationship="viewControllers" id="1XT-So-VJY"/>
+                        <segue destination="ZtQ-BP-X1s" kind="relationship" relationship="viewControllers" id="8T9-ay-SCI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cd9-gp-Dcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
         </scene>
+        <!--Registration-->
+        <scene sceneID="yzm-W5-vAu">
+            <objects>
+                <viewController id="OxE-Aa-NZj" customClass="Tab3ViewController" customModule="hw_lesson16_UITextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="99t-Rt-5wL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2p-jH-9Zz">
+                                <rect key="frame" x="0.0" y="44" width="600" height="458"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="66v-i0-0eS">
+                                        <rect key="frame" x="30" y="30" width="540" height="260"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnB-W4-TMe">
+                                                <rect key="frame" x="0.0" y="0.0" width="540" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="GdY-By-S0s"/>
+                                                    <constraint firstAttribute="height" constant="30" id="dND-8a-KLN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLw-Gq-h9v" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="40" width="540" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="1fv-3j-lRd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="name"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="OxE-Aa-NZj" id="ExJ-Nd-qcT"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel. :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYU-ZT-PXb">
+                                                <rect key="frame" x="0.0" y="90" width="540" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDg-PQ-BXT" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="130" width="540" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" textContentType="tel"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="OxE-Aa-NZj" id="kyE-Gd-hY7"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqf-hg-NGj">
+                                                <rect key="frame" x="0.0" y="180" width="540" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="InX-Aw-9Ai" customClass="CustomTextField" customModule="hw_lesson16_UITextField" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="220" width="540" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="OxE-Aa-NZj" id="phV-AR-nb2"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BYU-ZT-PXb" firstAttribute="height" secondItem="rnB-W4-TMe" secondAttribute="height" id="8SB-5f-UkP"/>
+                                            <constraint firstItem="qqf-hg-NGj" firstAttribute="height" secondItem="rnB-W4-TMe" secondAttribute="height" id="Dck-nG-7ba"/>
+                                            <constraint firstItem="InX-Aw-9Ai" firstAttribute="height" secondItem="yLw-Gq-h9v" secondAttribute="height" id="fYW-eT-xgX"/>
+                                            <constraint firstItem="XDg-PQ-BXT" firstAttribute="height" secondItem="yLw-Gq-h9v" secondAttribute="height" id="lcv-Bm-18h"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="66v-i0-0eS" firstAttribute="centerX" secondItem="X2p-jH-9Zz" secondAttribute="centerX" id="4jD-jb-abr"/>
+                                    <constraint firstAttribute="trailing" secondItem="66v-i0-0eS" secondAttribute="trailing" constant="30" id="9qh-eV-gIU"/>
+                                    <constraint firstAttribute="bottom" secondItem="66v-i0-0eS" secondAttribute="bottom" constant="30" id="WAI-9C-L2W"/>
+                                    <constraint firstItem="66v-i0-0eS" firstAttribute="top" secondItem="X2p-jH-9Zz" secondAttribute="top" constant="30" id="mKP-jU-z4k"/>
+                                    <constraint firstItem="66v-i0-0eS" firstAttribute="leading" secondItem="X2p-jH-9Zz" secondAttribute="leading" constant="30" id="oCa-kk-CTY"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Len-dC-rxk" appends="YES" id="luo-Ni-AJD"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X2p-jH-9Zz" firstAttribute="centerX" secondItem="99t-Rt-5wL" secondAttribute="centerX" id="0yd-UM-nHE"/>
+                            <constraint firstItem="CZ6-vM-UzA" firstAttribute="bottom" secondItem="X2p-jH-9Zz" secondAttribute="bottom" id="8gr-mE-prR"/>
+                            <constraint firstItem="CZ6-vM-UzA" firstAttribute="trailing" secondItem="X2p-jH-9Zz" secondAttribute="trailing" id="hJL-VW-t9T"/>
+                            <constraint firstItem="X2p-jH-9Zz" firstAttribute="leading" secondItem="CZ6-vM-UzA" secondAttribute="leading" id="hwj-sL-icp"/>
+                            <constraint firstItem="X2p-jH-9Zz" firstAttribute="top" secondItem="CZ6-vM-UzA" secondAttribute="top" id="waB-Qh-lB0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CZ6-vM-UzA"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Registration" id="d8g-h2-z0b">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="Ysu-at-WOY">
+                            <connections>
+                                <action selector="clearButtonClicked" destination="OxE-Aa-NZj" id="Nhn-3a-Fhn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="kQ0-0T-Dwz">
+                            <connections>
+                                <action selector="doneButtonClicked" destination="OxE-Aa-NZj" id="X1n-Ic-34D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="doneButton" destination="kQ0-0T-Dwz" id="8Vq-Qw-AP2"/>
+                        <outlet property="emailTF" destination="InX-Aw-9Ai" id="Bb9-gQ-aCQ"/>
+                        <outlet property="emailTL" destination="qqf-hg-NGj" id="8RH-iW-ozs"/>
+                        <outlet property="fullNameTF" destination="yLw-Gq-h9v" id="sLa-Ni-fTU"/>
+                        <outlet property="fullNameTL" destination="rnB-W4-TMe" id="45G-YC-toG"/>
+                        <outlet property="telTF" destination="XDg-PQ-BXT" id="us7-tS-7e2"/>
+                        <outlet property="telTL" destination="BYU-ZT-PXb" id="EJT-Tm-j99"/>
+                        <outletCollection property="collectionsTextField" destination="yLw-Gq-h9v" collectionClass="NSMutableArray" id="PBH-0u-PSP"/>
+                        <outletCollection property="collectionsTextField" destination="XDg-PQ-BXT" collectionClass="NSMutableArray" id="yrP-qd-Rld"/>
+                        <outletCollection property="collectionsTextField" destination="InX-Aw-9Ai" collectionClass="NSMutableArray" id="Yam-U7-itf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YrX-eK-RFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Len-dC-rxk">
+                    <connections>
+                        <action selector="hideKeyboard" destination="OxE-Aa-NZj" id="F89-5E-ENF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1979.7101449275365" y="928.79464285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MfR-oK-p2v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pB5-Jb-xO5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icons8-32-100" id="eMW-FK-9tt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cXX-fA-BQD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OxE-Aa-NZj" kind="relationship" relationship="rootViewController" id="QCm-gB-uim"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0yN-xU-scM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128.985507246377" y="928.79464285714278"/>
+        </scene>
     </scenes>
+    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
     <resources>
         <image name="icons8-30-100" width="50" height="50"/>
         <image name="icons8-31-100" width="50" height="50"/>

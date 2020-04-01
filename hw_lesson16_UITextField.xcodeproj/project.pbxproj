@@ -51,6 +51,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF14CF8A2431108E002FC1E0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF8D64FF2427879E0062AA45 /* Tab1ViewController.swift */,
+				AF8D650F24278B510062AA45 /* Tab2ViewController.swift */,
+				AF8D651124278B630062AA45 /* Tab3ViewController.swift */,
+				AF8D651324278B710062AA45 /* Tab4ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AF14CF8B243110D1002FC1E0 /* Keyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AF14CF8D243110F5002FC1E0 /* XIB */,
+				AF14CF8C243110E6002FC1E0 /* Controllers */,
+			);
+			path = Keyboards;
+			sourceTree = "<group>";
+		};
+		AF14CF8C243110E6002FC1E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF604B9F242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift */,
+				AF14CF862430D559002FC1E0 /* KeyBoardToolBarForTab2.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF14CF8D243110F5002FC1E0 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				AF604BA1242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib */,
+				AF14CF882430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		AF14CF8E24311127002FC1E0 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				AF14CF842430922D002FC1E0 /* CustomTextField.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
 		AF8D64EF2427879E0062AA45 = {
 			isa = PBXGroup;
 			children = (
@@ -71,19 +117,13 @@
 			isa = PBXGroup;
 			children = (
 				AF8D64FB2427879E0062AA45 /* AppDelegate.swift */,
-				AF8D64FF2427879E0062AA45 /* Tab1ViewController.swift */,
-				AF8D650F24278B510062AA45 /* Tab2ViewController.swift */,
-				AF8D651124278B630062AA45 /* Tab3ViewController.swift */,
-				AF8D651324278B710062AA45 /* Tab4ViewController.swift */,
-				AF604B9F242E0F3900A87AE1 /* KeyBoardToolBarForTab1.swift */,
-				AF604BA1242E0F4C00A87AE1 /* KeyBoardToolBarXIB.xib */,
-				AF8D65042427879E0062AA45 /* Assets.xcassets */,
-				AF8D65012427879E0062AA45 /* Main.storyboard */,
+				AF14CF8E24311127002FC1E0 /* CustomClass */,
+				AF14CF8B243110D1002FC1E0 /* Keyboards */,
+				AF14CF8A2431108E002FC1E0 /* ViewControllers */,
 				AF8D65062427879E0062AA45 /* LaunchScreen.storyboard */,
+				AF8D65012427879E0062AA45 /* Main.storyboard */,
+				AF8D65042427879E0062AA45 /* Assets.xcassets */,
 				AF8D65092427879F0062AA45 /* Info.plist */,
-				AF14CF842430922D002FC1E0 /* CustomTextField.swift */,
-				AF14CF862430D559002FC1E0 /* KeyBoardToolBarForTab2.swift */,
-				AF14CF882430D5B6002FC1E0 /* KeyBoardToolBarForTab2XIB.xib */,
 			);
 			path = hw_lesson16_UITextField;
 			sourceTree = "<group>";
