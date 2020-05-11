@@ -25,6 +25,9 @@ class Tab3ViewController: UIViewController {
     @IBOutlet var collectionsTextField: [CustomTextField]!
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var scrollView: UIScrollView!
+
+    
     private let keyboardToolbar = KeyBoardToolBarForTab1.create()
     
     private var isDoneButtonEnable = false
@@ -62,7 +65,29 @@ class Tab3ViewController: UIViewController {
         }
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           
+           NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillChangeFrameNotification, object: nil, queue: OperationQueue.main) { [weak self] notification in
+               guard
+                   let frameEnd = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+                   else {
+                       return
+               }
+               
+               self?.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: frameEnd.size.height + 20, right: 0)
+           }
+           
+           NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: OperationQueue.main) { [weak self] _ in
+               
+               self?.scrollView.contentInset = UIEdgeInsets.zero
+           }
+       }
+       
+       override func viewDidDisappear(_ animated: Bool) {
+           super.viewDidDisappear(animated)
+           NotificationCenter.default.removeObserver(self)
+       }
    
     private func setupTextLabel() {
 

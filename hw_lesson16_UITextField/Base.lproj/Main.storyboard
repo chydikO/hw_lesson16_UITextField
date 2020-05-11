@@ -110,6 +110,7 @@
                         <outlet property="numberField" destination="rX3-eU-jQ8" id="zgS-EZ-9CE"/>
                         <outlet property="passwordField" destination="lFq-3w-CHg" id="Gay-1f-2oj"/>
                         <outlet property="passwordTextLabel" destination="ZH7-fy-PuJ" id="cSR-Rr-FNw"/>
+                        <outlet property="scrollView" destination="ixK-Ud-h3I" id="SEf-9a-Mwp"/>
                         <outlet property="textField" destination="lRE-aP-HlO" id="9kG-Mo-LHu"/>
                     </connections>
                 </viewController>
@@ -156,10 +157,7 @@
                                                     <constraint firstAttribute="width" constant="150" id="j3L-Mm-yPp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" secureTextEntry="YES" smartInsertDeleteType="no"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="ZtQ-BP-X1s" id="Q2J-Bl-Kzb"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartInsertDeleteType="no"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -190,6 +188,7 @@
                     <tabBarItem key="tabBarItem" title="" image="icons8-34-100" id="g7B-FG-f06"/>
                     <connections>
                         <outlet property="cvvTextField" destination="xnF-Fi-zLd" id="UZu-hi-J7B"/>
+                        <outlet property="scrollView" destination="UCC-rH-zO5" id="4Zx-3a-GiV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M99-th-fbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -327,6 +326,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icons8-31-100" id="1gy-4q-QgB"/>
                     <connections>
+                        <outlet property="scrollView" destination="7Fq-wv-VrT" id="GYQ-F6-XLL"/>
                         <outlet property="textField1" destination="JdX-fC-RnS" id="RtA-QZ-Jvk"/>
                         <outlet property="textField2" destination="3NF-NT-IHF" id="2gm-xC-fhE"/>
                         <outlet property="textField3" destination="R5C-kW-xJi" id="B7G-gt-0Ud"/>
@@ -484,6 +484,7 @@
                         <outlet property="doneButton" destination="kQ0-0T-Dwz" id="8Vq-Qw-AP2"/>
                         <outlet property="emailTF" destination="InX-Aw-9Ai" id="Bb9-gQ-aCQ"/>
                         <outlet property="fullNameTF" destination="yLw-Gq-h9v" id="sLa-Ni-fTU"/>
+                        <outlet property="scrollView" destination="X2p-jH-9Zz" id="2Zl-go-bFf"/>
                         <outlet property="telTF" destination="XDg-PQ-BXT" id="us7-tS-7e2"/>
                         <outletCollection property="collectionsTextField" destination="yLw-Gq-h9v" collectionClass="NSMutableArray" id="PBH-0u-PSP"/>
                         <outletCollection property="collectionsTextField" destination="XDg-PQ-BXT" collectionClass="NSMutableArray" id="yrP-qd-Rld"/>

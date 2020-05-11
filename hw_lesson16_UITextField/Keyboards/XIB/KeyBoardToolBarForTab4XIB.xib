@@ -20,17 +20,32 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F61-OF-Voz">
                             <rect key="frame" x="0.0" y="0.0" width="134.5" height="34"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="4ib-GU-jRG"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To2-EJ-Ao5">
                             <rect key="frame" x="139.5" y="0.0" width="135" height="34"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="c8t-un-MWc"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUG-A0-sg3">
                             <rect key="frame" x="279.5" y="0.0" width="134.5" height="34"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="z4K-kO-vlG"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -40,17 +55,32 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyq-qo-PbH">
                             <rect key="frame" x="0.0" y="0.0" width="134.5" height="33.5"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="MY7-VC-Rf4"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvx-tM-vxN">
                             <rect key="frame" x="139.5" y="0.0" width="135" height="33.5"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="bao-Nr-tqb"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tx-Vy-hEz">
                             <rect key="frame" x="279.5" y="0.0" width="134.5" height="33.5"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="HA3-FG-ra9"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -60,17 +90,32 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-jz-Vbe">
                             <rect key="frame" x="0.0" y="0.0" width="134.5" height="34"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="sMY-l2-5ZY"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOG-JG-48p">
                             <rect key="frame" x="139.5" y="0.0" width="135" height="34"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="cvz-DA-Kap"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2x-B3-iTD">
                             <rect key="frame" x="279.5" y="0.0" width="134.5" height="34"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="t66-E1-22b"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -80,22 +125,51 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFD-kC-sei">
                             <rect key="frame" x="0.0" y="0.0" width="134.5" height="33.5"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="enterBtnClicked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="YVE-ae-tNo"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gt-aG-uio">
                             <rect key="frame" x="139.5" y="0.0" width="135" height="33.5"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPudBtnCliked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="pdS-qo-4jb"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iga-bm-Qij">
                             <rect key="frame" x="279.5" y="0.0" width="134.5" height="33.5"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" title="&lt;">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="deleteBtnClicked:" destination="iJR-VR-zgI" eventType="touchUpInside" id="aHo-GW-k4d"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="b7Q-Cc-ivF"/>
+            <connections>
+                <outlet property="bsPad" destination="iga-bm-Qij" id="TcL-gf-enx"/>
+                <outlet property="donePad" destination="MFD-kC-sei" id="DgL-c9-jOa"/>
+                <outlet property="nuberPad0" destination="2gt-aG-uio" id="bG5-Nr-pCq"/>
+                <outlet property="nuberPad1" destination="F61-OF-Voz" id="alS-QI-byV"/>
+                <outlet property="nuberPad2" destination="To2-EJ-Ao5" id="Nsi-Yt-Zej"/>
+                <outlet property="nuberPad3" destination="hUG-A0-sg3" id="Ige-JV-2Io"/>
+                <outlet property="nuberPad4" destination="Pyq-qo-PbH" id="aeZ-vi-o2n"/>
+                <outlet property="nuberPad5" destination="tvx-tM-vxN" id="TFs-ra-8C5"/>
+                <outlet property="nuberPad6" destination="3tx-Vy-hEz" id="uIU-zF-xqc"/>
+                <outlet property="nuberPad7" destination="BD7-jz-Vbe" id="TDb-JU-vJy"/>
+                <outlet property="nuberPad8" destination="UOG-JG-48p" id="TbR-Fg-oOb"/>
+                <outlet property="nuberPad9" destination="E2x-B3-iTD" id="vhn-bu-1Uq"/>
+            </connections>
             <point key="canvasLocation" x="-155" y="35"/>
         </stackView>
     </objects>

@@ -29,6 +29,8 @@ class Tab2ViewController: UIViewController {
     @IBOutlet weak var textField7: CustomTextField!
     @IBOutlet weak var textField8: CustomTextField!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+
     private let keyboardToolbar = KeyBoardToolBarForTab2.create()
 
 
@@ -48,7 +50,29 @@ class Tab2ViewController: UIViewController {
         }
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           
+           NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillChangeFrameNotification, object: nil, queue: OperationQueue.main) { [weak self] notification in
+               guard
+                   let frameEnd = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+                   else {
+                       return
+               }
+               
+               self?.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: frameEnd.size.height + 20, right: 0)
+           }
+           
+           NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: OperationQueue.main) { [weak self] _ in
+               
+               self?.scrollView.contentInset = UIEdgeInsets.zero
+           }
+       }
+       
+       override func viewDidDisappear(_ animated: Bool) {
+           super.viewDidDisappear(animated)
+           NotificationCenter.default.removeObserver(self)
+       }
     
     @IBAction private func hideKeyboard() {
         view.endEditing(true)
